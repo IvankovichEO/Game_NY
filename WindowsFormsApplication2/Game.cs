@@ -26,6 +26,7 @@ namespace WindowsFormsApplication2
             InitializeComponent();
             lives_image = new PictureBox[] { pictureBox1, pictureBox2, pictureBox3,
                                                 pictureBox4, pictureBox5, pictureBox6};
+
             words = new string[] { "карнавал", "праздник", "дед мороз", "олень", 
                 "сюрприз", "елочка" };
             current_word = "";
@@ -35,8 +36,13 @@ namespace WindowsFormsApplication2
             lives = lives_image.Length;
 
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+
+
             start_game(wordArea, lives_image);
         }
+
+
+
 
         public static void start_game(RichTextBox wordArea)
         {
